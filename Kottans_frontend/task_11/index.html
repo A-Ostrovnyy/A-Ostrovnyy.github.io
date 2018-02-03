@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+	<style>body { opacity: 0; overflow-x: hidden;} html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+	<div class="wraper">
+		<header class="main__header">
+			<a href="/" class="logo" ><img src="/img/logo_header.png" alt=""></a>
+			<button class="header__btn btn back" >go back</button>
+			<button class="header__btn btn sign" >sign in</button>
+		</header>
+		<div class="form_wrapper">
+			<header>
+				<div class="preview_order">
+					<h2 class="order">Your order</h2>
+					<div class="preview_value">
+						<table class="preview">
+							<tr>
+								<th>Items</th>
+								<th>Details</th>
+								<th>price</th>
+								<th>delivery</th>
+							</tr>
+							<tr>
+								<td>2 douments</td>
+								<td>2 langueges</td>
+								<td>$ 696.06</td>
+								<td>48 hours*</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+				<div class="preview_buttons">
+					<button class="btn" id="order">Place order</button>
+					<button class="btn" id="quote">Print a quote</button>
+				</div>
+				<div class="help">
+					<h2>Help center</h2>
+					<p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone on e-mail.</p>
+					<address class="address__block">
+						<a href="tel:+971 (0) 555 555" >+971 (0) 555 555</a>
+						<a href="mailto:help@qtest.com">help@qtest.com</a>
+					</address>
+				</div>
+			</header>
+			<form action="#">
+				<section class="seletion">
+					<div class="container">
+							<h2><span>select what you want to translate</span></h2>
+							<div class="radio__choise">
+								<label class="radio__type">
+										<input required type="radio" name="translation" value="website" class="visually__hidden">
+										<div class="select__wrapper">
+											<img src="/img/img_1.png" alt="" width="94px" height="105px">
+											<span>Website</span>
+										</div>
+								</label>
+								<label class="radio__type">
+										<input required type="radio" name="translation" value="document" class="visually__hidden" checked >
+										<div class="select__wrapper">
+											<img src="/img/img_2.png" alt="" width="94px" height="105px">
+											<span>Documents</span>
+										</div>
+								</label>
+								<label class="radio__type">
+										<input required type="radio" name="translation" value="social" class="visually__hidden" >
+										<div class="select__wrapper">
+											<img src="/img/img_3.png" alt="" width="94px" height="105px">
+											<span>Social Account</span>
+										</div>
+								</label>
+							</div>
+					</div>
+				</section>
+				<section class="upload">
+					<div class="container">
+						<h2 class="caption">Upload your documents</h2> <span>(Doc, Docx Text, PDF, Markdown)</span>
+						<div class="btn_upload">
+							<label for="Uploader">
+								<span>Upload a new file</span>
+								<input type="file" id="Uploader" name="Uploader" accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+							</label>
+						</div>
+						<div class="upload__list">
+							<div class="th">file name</div>
+							<div class="th hide">file size</div>
+							<div class="th hide">number of words</div>
+							<div class="th th_remove">remove</div>					
+							<div class="file__name">business_operatiob.docx</div>
+							<div class="hide">78kb</div>
+							<div class="hide">842</div>
+							<div class="remove"><button></button></div>					
+							<div class="file__name">business_financial.docx</div>
+							<div class="hide">26kb</div>
+							<div class="hide">2'326</div>
+							<div class="remove"><button></button></div>
+						</div>
+						
+					</div>
+				</section>
+				<section class="language">
+					<div class="container">
+						<h2 class="caption">Chose your language pairings</h2>
+						<div class="from">
+							<span>from</span>
+							<div class="select__wraper">
+								<select name="theme">
+									<option value="english" selected><span class="options">English</span></option>
+									<option value="arabic">Arabic</option>
+									<option value="Kurdish">Kurdish</option>
+							</select>
+							</div>
+						</div>
+						<div class="to">
+							<span>to</span>
+							<div class="select__wraper">
+								<select name="theme">
+									<option value="english">English</option>
+									<option value="arabic" selected>Arabic</option>
+									<option value="Kurdish">Kurdish</option>
+								</select>
+							</div>
+							<div class="select__wraper added">
+								<select name="theme">
+									<option value="english">English</option>
+									<option value="arabic">Arabic</option>
+									<option value="Kurdish" selected>Kurdish</option>
+								</select>
+							</div>
+							<button class="delete"></button>
+							<button class="add__language">+ add</button>
+						</div>
+					</div>
+				</section>
+				<section class="desire_urgent">
+					<div class="container">
+						<div class="row_wraper">
+							<div class="desire">
+								<h2 class="caption">Select your desired tone</h2>
+								<div class="radio__choise radio__align">
+										<label class="radio__type ">
+											<input required type="radio" name="dessire" value="friend" class="visually__hidden">
+											<div class="radio__wraper">
+												<img src="/img/social.png" class="radio__wraper--img" alt="" width="20px" height="18px">
+												<span>Friendly/Casual</span>
+											</div>
+										</label>
+										<label class="radio__type ">
+											<input required checked type="radio" name="dessire" value="corporate" class="visually__hidden">
+											<div class="radio__wraper">
+												<img src="/img/corporate.png" class="radio__wraper--img" alt="" width="20px" height="18px">
+												<span>Corporate/Pro</span>
+											</div>
+										</label>
+										<label class="radio__type ">
+											<input required type="radio" name="dessire" value="media" class="visually__hidden">
+											<div class="radio__wraper">
+												<img src="/img/media.png" class="radio__wraper--img" alt="" width="18px" height="19px">
+												<span>Media/Formal</span>
+											</div>
+										</label>
+								</div>
+							</div>
+							<div class="urgent">
+								<h2 class="caption">Tell us how urgent this job is</h2>
+								<div class="range">
+									<input type="range" name="urgent" min="0" max="100" step="10" value="50">
+								</div>
+								<div class="range__text">
+									<span>I got time</span>
+									<span class="orange">avarage</span> 
+									<span>yesturday</span> 
+								</div>
+								<div class="timeline__info">
+									<h3>timeline info</h3>
+									<p>With an <span>avarage</span> timeline set up? our expert translator can take a resonable amount of time perfecting your translation.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="payment">
+					<div class="container">
+						<h2  class="caption">Sign up and choose a payment method</h2>
+						<p>Already have an account with us? <a href="#">Sign in</a>.</p>
+						<div class="payment__form">
+							<div class="payment__info">
+									<!-- NAME -->
+									<label for="uname">Full name </label>
+									<input required type="text" id="uname" name="name"
+										placeholder="Mathieu Mayer">
+										
+									<div class="payment__wraper">
+										<!-- EMAIL -->
+										<div class="payment__email">
+											<label for="email">email adress </label>
+											<input required type="email" id="email" name="email"
+												placeholder="mathieu.mm@me.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="name@domain.etc">
+										</div>
+										<div class="payment__password">
+												<!-- PASSWORD -->
+											<label for="password">choose a passsword </label>
+											<input required type="password" id="password" name="password"
+												placeholder="********" title="Minimum 8 characters, UPPERCASE, lowercase and Number" minlength="6" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*">
+										</div>
+									</div>
+							</div>
+							<div class="payment__system">
+									<div class="payment__radio">
+											<label class="radio__type ">
+													<input required checked type="radio" name="payment__system" value="visa" class="visually__hidden">
+													<div class="payment__radio__wraper">
+														<img src="/img/visa.png" class="radio__wraper--img" alt="" width="97px" height="25px">
+														<span>Visa</span>
+													</div>
+											</label>
+											<label class="radio__type ">
+													<input required type="radio" name="payment__system" value="paypal" class="visually__hidden">
+													<div class="payment__radio__wraper">
+														<img src="/img/paypal.png" class="radio__wraper--img" alt="" width="97px" height="25px">
+														<span>Paypal</span>
+													</div>
+											</label>
+											<label class="radio__type ">
+													<input required type="radio" name="payment__system" value="amazone" class="visually__hidden">
+													<div class="payment__radio__wraper">
+														<img src="/img/amazone.png" class="radio__wraper--img" alt="" width="103px" height="25px">
+														<span>Amazone</span>
+													</div>
+											</label>
+									</div>
+									<div class="card__info">
+										<div class="card__item">
+											<label for="card__number">card number </label>
+											<input required type="text" id="card__number" name="card" 
+											  minlength="19" maxlength="19" class="card__number" pattern="[0,1]4\$[0,1]4\$[0,1]4$[0,1]4" title="1234 1234 1234 1234" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+										</div>
+										<div class="card__item">
+											<label for="card__date">expiry date </label>
+											<input required type="text" id="card__date" name="card"
+											placeholder="MM/YY" minlength="5" maxlength="5" class="card__date" pattern="[0-9]{2}\/[0-9]{2}" title="12/34" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+										</div>
+										<div class="card__item">
+											<label for="card__cvv">code </label>
+											<input required type="text" id="card__cvv" name="card"
+											pattern="[0-9]{3}" maxlength="3" size="3" class="card__cvv" title="123" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+										</div>
+									</div>
+			
+							</div>
+						</div>
+			
+					</div>
+				</section>
+				<section class="submite">
+					<div class="container">
+						<div class="submite__wraper">
+							<div class="input">
+								<input type="checkbox" id="legal" name="legal">
+								<label for="legal">I agree to the <a href="#">Terms & Conditions</a></label>
+							</div>
+							<button class="btn" id="btn__order">Place order</button>
+							<button class="btn" id="btn__quote">Print a quote</button>
+						</div>
+					</div>
+				</section>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<div class="footer__container">
+			<div class="footer__wraper">
+				<div class="footer__item">
+					<h3 class="work">what we do</h3>
+					<p>
+						We provide a full range of language serivices including content development, document, website and social media accounts translations.
+					</p>
+				</div>
+				<div class="footer__item">
+					<h3 class="office">our main office</h3>
+					<p>
+						Dubai, UAE <br>
+						P.O. Box: 502735 <br>
+						Phone: <a href="tel:+971(0)44278128">+971(0)44278128</a>
+					</p>
+				</div>
+				<div class="footer__item">
+					<h3 class="connect">connect with us</h3>
+					<div class="link">
+						<a href="#" class="facebook">Facebook</a>
+						<a href="#" class="twiter">Twitter</a>
+						<a href="#" class="linkedin">Linkedin</a>
+					</div>
+				</div>
+				<div class="footer__item footer__logo">
+					<a href="/"><img src="/img/logo_footer.png" alt="" class="logo"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+
+</body>
+</html>
