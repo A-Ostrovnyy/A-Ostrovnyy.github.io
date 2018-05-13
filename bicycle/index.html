@@ -12,6 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/tiny-slider.css">
 
 </head>
@@ -19,19 +20,15 @@
 <body>
 
 	<header class="main_header wraper">
-		<div class="nav_wraper">
-			<nav class="menu">
-				<a href="#">about us</a>
-				<a href="#">work</a>
-			</nav>
+		<nav class="menu">
+			<a href="#" class="menu_link">about us</a>
+			<a href="#" class="menu_link">work</a>
 			<a href="/" class="logo">
 				<img src="img/Logo.png" alt="logo">
 			</a>
-			<nav class="menu">
-				<a href="#">shop</a>
-				<a href="#">contact</a>
-			</nav>
-		</div>
+			<a href="#" class="menu_link">shop</a>
+			<a href="#" class="menu_link">contact</a>
+		</nav>
 		<div class="hamburger_wraper js-btn">
 			<div class="hamburger_item"></div>
 		</div>
@@ -46,7 +43,7 @@
 	</header>
 
 	<section class="promo wraper">
-		<img src="img/chain.png" alt="">
+		<div class="image_bg image_container"></div>
 		<h2 class="head">A new generation of vintage bike</h2>
 		<p class="promo_text">
 			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
@@ -60,7 +57,7 @@
 			<div class="image image_wraper image_height" style="background-image: url(img/olvia_1.jpg)"></div>
 			<div class="text_wraper">
 				<div class="text">
-					<img src="img/frame.png" alt="frame">
+					<div class="image_bg image_container"></div>
 					<h3 class="head">vintage Oliva</h3>
 					<p class="promo_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
 						dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
@@ -73,7 +70,7 @@
 	<section class="boriosa wraper">
 		<div class="text_wraper">
 			<div class="text">
-				<img src="img/wheel.png" alt="">
+				<div class="image_bg image_container"></div>
 				<h2 class="head">la boriosa</h2>
 				<p class="promo_text">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
@@ -89,9 +86,7 @@
 		<div class="image image_wraper image_height" style="background-image: url(img/hulot_1.jpg)"></div>
 		<div class="text_wraper">
 			<div class="text">
-				<div class="promo_img">
-					<img src="img/fork.png" alt="">
-				</div>
+				<div class="image_bg image_container"></div>
 				<h2 class="head">retrò Bike - M. Hulot</h2>
 				<p class="promo_text">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
@@ -108,7 +103,7 @@
 	<section class="twitter">
 		<div class="slider_wraper js_container">
 			<div class="slider_items">
-				<img src="img/twitter.png" alt="twitter logo">
+				<div class="image_bg image_container" style="background-image: url(img/twitter.png)"></div>
 				<h2 class="author">AOD New York @aod
 					<span class="time">/ 35 min</span>
 				</h2>
@@ -116,7 +111,7 @@
 					dictum turpis vitae, pretium ante amet.</p>
 			</div>
 			<div class="slider_items">
-				<img src="img/twitter.png" alt="twitter logo">
+				<div class="image_bg image_container" style="background-image: url(img/twitter.png)"></div>
 				<h2 class="author">AOD New York @aod
 					<span class="time">/ 35 min</span>
 				</h2>
@@ -124,7 +119,7 @@
 					dictum turpis vitae, pretium ante amet.</p>
 			</div>
 			<div class="slider_items">
-				<img src="img/twitter.png" alt="twitter logo">
+				<div class="image_bg image_container" style="background-image: url(img/twitter.png)"></div>
 				<h2 class="author">AOD New York @aod
 					<span class="time">/ 35 min</span>
 				</h2>
@@ -188,18 +183,20 @@
 		<form action="post">
 			<label for="mail">
 				<input type="email" id="mail" placeholder="enter your email" required>
-				<button type="submit" id="submit">go</button>
+				<input type="submit" id="submit" value="go">
 			</label>
 		</form>
 	</section>
 
 	<footer class="footer wraper">
 		<div class="footer_wraper">
-			<div class="addres">
+			<div class="address">
 				<address>
 					<span class="city">AOD New York</span>
-					<br> 2250 Lexington Avenue
-					<br> New York, NY 10035 - info@domain.com
+					<span>2250 Lexington Avenue</span>
+					<span>New York, NY 10035 -
+						<a href="mailto:info@domain.com">info@domain.com</a>
+					</span>
 				</address>
 			</div>
 			<div class="social">
@@ -223,7 +220,7 @@
 
 
 
-	<link rel="stylesheet" href="css/main.min.css">
+
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.js"></script>
 	<script src="js/scripts.min.js"></script>
