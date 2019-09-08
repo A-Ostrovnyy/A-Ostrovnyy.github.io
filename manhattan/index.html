@@ -8,6 +8,15 @@
     <meta name="theme-color" content="#fff" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" media="all" href="css/app.css" />
+    <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon' />
+    <meta name="theme-color" content="#fff" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#fff" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
   </head>
   <body>
     <!-- BEGIN content -->
@@ -84,41 +93,50 @@
               </li>
             </ul>
           </div>
+          <nav class="menu">
+            <div class="hamburgerWrapper">
+              <button class="hamburger" id="hamburger">
+                <span class="hamburger__item"></span>
+                <span class="hamburger__item"></span>
+                <span class="hamburger__item"></span>
+              </button>
+            </div>
+            <ul class="menu__list js-menu__list" aria-role="list">
+              <li class="menu__item ">
+                <a href="#hero" class="menu__link">Hello World</a>
+              </li>
+              <li class="menu__item ">
+                <a href="#about" class="menu__link">About Kottans</a>
+              </li>
+              <li class="menu__item ">
+                <a href="#courses" class="menu__link">Courses</a>
+              </li>
+              <li class="menu__item ">
+                <a href="#ownCourses" class="menu__link">How create own courses</a>
+              </li>
+              <li class="menu__item ">
+                <a href="#core" class="menu__link">Kottance core</a>
+              </li>
+              <li class="menu__item ">
+                <a href="#review" class="menu__link">Review from graduators</a>
+              </li>
+              <li class="menu__item ">
+                <a href="#partners" class="menu__link">Our sponsors &amp; friends</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
       <main class="mainWrapper">
-        <nav class="menu">
-          <ul class="menu__list" aria-role="list">
-            <li class="menu__item menu__item--isactive">
-              <a href="#hero" class="menu__link">Hello World</a>
-            </li>
-            <li class="menu__item">
-              <a href="#hero" class="menu__link">About Kottans</a>
-            </li>
-            <li class="menu__item">
-              <a href="#hero" class="menu__link">Courses</a>
-            </li>
-            <li class="menu__item">
-              <a href="#hero" class="menu__link">Conference</a>
-            </li>
-            <li class="menu__item">
-              <a href="#hero" class="menu__link">How create own courses</a>
-            </li>
-            <li class="menu__item">
-              <a href="#hero" class="menu__link">Kottance core</a>
-            </li>
-            <li class="menu__item">
-              <a href="#hero" class="menu__link">Review from graduators</a>
-            </li>
-            <li class="menu__item">
-              <a href="#hero" class="menu__link">Our sponsors & friends</a>
-            </li>
-          </ul>
-        </nav>
         <section class="hero" id="hero">
           <div class="container">
             <h2 class="hero__slogan">
-              <span> Hello World. </span> Meet Kottans. Free courses for <span class="hero__target" id="hero__target"></span>
+              <p>
+                <span> Hello </span>
+                <span> World. </span>
+              </p>
+              <p>Meet Kottans. Free courses for</p>
+              <span class="hero__target" id="hero__target"></span>
             </h2>
             <div class="hero__promo">
               <div class="hero__promoTop">
@@ -155,13 +173,16 @@
                     <span>> Knowledge must be shared</span>
                   </div>
                 </div>
-                <div class="about__text">
+                <div class="about__text js-about__text">
                   <h3 class="about__textTitle"> We are community of developers that love to code and help each other. </h3>
                   <p>We are looking for smart, friendly, self-directed and intellectually curious people who enjoy programming and want to get significantly better.</p>
                   <p>We are passionate about programming and think that everybody can pick it up or switch to the different field at any time they want, given some amount of motivation, dedication and hard work.</p>
                   <p>Nevertheless, doing that on one's own can be challenging when it comes to continuing without support from surrounding people, such situation really beats the motivation, especially when encountering either boring or impossible to do (at first glance) task or illogical aspect of programming language you can't just grasp.</p>
                   <p>That's the reason behind us getting together and sharing knowledge.</p>
                   <p>Our initiative is community driven, making it super-flexible in terms of adapting to what students want while keeping in mind the main idea - learn something new and do it in the fun way, creating something meaningful along the way.</p>
+                </div>
+                <div class="buttonWrapper">
+                  <button class="header__contact" id="readMore-about"> read more </button>
                 </div>
               </div>
             </div>
@@ -198,10 +219,14 @@
           <div class="container">
             <div class="section__title">
               <h2>
-                <p>How</p>
-                <p>create</p>
-                <p>own</p>
-                <p>courses</p>
+                <p>
+                  <span>How</span>
+                  <span>create</span>
+                </p>
+                <p>
+                  <span>own</span>
+                  <span>courses</span>
+                </p>
               </h2>
             </div>
             <div class="section__content">
